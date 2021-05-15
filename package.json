@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git"
+    "url": "git+https://github.com/niteappantest/WhatsAsenaDuplicated.git"
   },
   "keywords": [
     "whatsapp",
@@ -21,9 +21,9 @@
   "developer": "AsenaDev / @phaticusthiccy",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
+    "url": "https://github.com/niteappantest/WhatsAsenaDuplicated/issues"
   },
-  "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
+  "homepage": "https://github.com/niteappantest/WhatsAsenaDuplicated#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.0",
     "@lh2020/speedtest-net": "^2.1.1",
