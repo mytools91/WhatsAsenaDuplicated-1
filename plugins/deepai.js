@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'}
+            {mimetype: Mimetype.jpg, caption: 'Made by W5-BOT'}
         )
 
     }));
@@ -386,7 +386,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'}
+            {mimetype: Mimetype.jpg, caption: 'Made by W5-BOT'}
         )
 
     }));
