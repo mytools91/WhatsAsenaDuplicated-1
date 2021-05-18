@@ -10,7 +10,7 @@ const axios = require('axios');
 const Config = require('../config');
 
 const Language = require('../language');
-const Lang = Language.getString('wallpaper');
+const Lang = Language.getString('catwallpaper');
 
 if (Config.WORKTYPE == 'private') {
 
