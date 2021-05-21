@@ -19,7 +19,7 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: "Download conten
 
     if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORDIGTV))
 
-    await message.sendMessage(infoMessage("Loading"))
+    await message.sendMessage(infoMessage("⏳Loading"))
 
     await axios
       .get(`https://api-anoncybfakeplayer.herokuapp.com/igdown?url=${userName}`)
