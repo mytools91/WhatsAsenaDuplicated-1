@@ -64,7 +64,7 @@ else if (Config.WORKTYPE == 'public') {
                 .videoFilters('scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1')
                 .save('st.webp')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('st.webp'), MessageType.sticker);
+                    await message.sendMessage(fs.readFileSync('st.webp'), MessageType.sticker, caption: 'W5-BOT');
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
@@ -108,7 +108,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoFilters('scale=600:600:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=600:600:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1')
             .save('sticker.webp')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('sticker.webp'), MessageType.sticker);
+                await message.sendMessage(fs.readFileSync('sticker.webp'), MessageType.sticker, caption: 'W5-BOT');
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
