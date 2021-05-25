@@ -23,7 +23,7 @@ function errorMessage(msg) {
     return "🛑 *W5-BOT*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *W5-BOT*:  ```" + msg + "```"
+    return "🐱 *W5-BOT*:  ```" + msg + "```"
 }
 
 
