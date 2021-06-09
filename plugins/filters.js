@@ -53,7 +53,7 @@ Asena.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, don
 
 Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if (!!message.mention && message.mention[0] == '917736807522@s.whatsapp.net','917994876705@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./mp3/abdu.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./mp3/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
 const array = ['Abdu','Bot','Friend','Friends','Hello','help','menu','Myr','Myre','thyr','thyre','Nanba','Nanban','sticker']
 array.map( async (a) => {
