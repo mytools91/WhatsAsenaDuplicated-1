@@ -51,7 +51,7 @@ Asena.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, don
 }));
 
 
-Asena.addCommand({on: 'Text', fromMe: false}, (async (message, match) => {
+Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if (!!message.mention && message.mention[0] == '917736807522@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./mp3/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
@@ -69,19 +69,6 @@ if(pattern.test(message.message)){
         async (filter) => {
             pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
             if (pattern.test(message.message)) {
-                await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
-            }
-        }
-    );
-}));
-Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
-    var filtreler = await FilterDb.getFilter(message.jid);
-    if (!filtreler) return; 
-    filtreler.map(
-        async (filter) => {
-            pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
-            if (pattern.test(message.message)) {
-                await new Promise(r => setTimeout(r, 1000));
                 await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
             }
         }
